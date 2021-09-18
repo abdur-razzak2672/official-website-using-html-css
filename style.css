@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@500;700&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+body{
+     font-family: "poppins",sans-serif;
+
+
+ }
+
+ 
+
+
+.row{
+   width: 100%;
+
+}
+
+ .home{
+    background : url(images/bg.png) no-repeat center; 
+    display: flex;
+    color: #fff;
+    min-width: 600px;
+    background-size: cover;
+ 
+    background-size: 100% 100%;
+    height: 100vh;
+    margin: 0 auto 0;
+    position: relative;
+ }
+
+
+ .about{
+    background : url(images/abg.png) no-repeat center; 
+    display: flex;
+    min-width: 600px;
+    background-size: cover;
+    padding: 100px 0;
+    background-size: 120% 100%;
+    margin: 0 auto 0;
+    position: relative;
+ }
+
+ .map{
+    padding: 30px 0;
+    background : url(images/mapbg.png) no-repeat center; 
+    text-align: center;
+    color: #111;
+    min-width: 600px;
+    background-size: cover;
+
+    background-size: 100% 100%;
+    margin: 0 auto 0;
+    position: relative;
+ 
+ }
+
+ .courses{
+    background : url(images/kidbg.png) no-repeat center; 
+    min-width: 600px;
+    background-size: cover;
+    background-size: 100% 100%;
+    margin: 0 auto 0;
+    position: relative;
+    padding: 200px 0;
+ }
+
+ 
+
+.foot{
+    background : url(images/foterbg.png) no-repeat center; 
+ 
+    height: 30vh;
+    min-width: 600px;
+    background-size: cover;
+    padding: 30px 0;
+    background-size: 100% 100%;
+    margin: 0 auto 0;
+    position: relative;
+ }
+
+/* scroll section styling*/
+html{
+   scroll-behavior: smooth;
+}
+
+.scroll-up-btn{
+   position: fixed;
+   height: 50px;
+   width: 50px;
+   border-radius: 12px;;
+   background: crimson;
+   right: 30px;
+
+   text-align: center;
+   color: #fff;
+   z-index: 9999;
+   font-size: 30px;
+   cursor: pointer;
+   opacity: 0;
+   pointer-events: none;
+   transition: all03s ease;
+
+}
+.scroll-up-btn.show{
+   bottom: 30px;
+   opacity: 1;
+   pointer-events: auto;
+}
+
+
+
+
+
+
+/* navigation bar section stylling*/
+.navbar{
+   position: fixed;
+   width: 100%;
+   font-family: 'ubuntu',sans-serif;
+   padding: 15px 0;
+   transition: all 0.3s ease;
+   z-index: 999;
+}
+
+.navbar.sticky{
+   background-color:  #666666;
+   padding: 8px 0;
+}
+
+
+.navbar .menu li a{
+   color: #111;
+   font-size: 20px;
+   font-weight: 500px;
+   margin-left: 25px;
+   transition: color 0.3s ease;
+   display: block;
+
+}
+.navbar .menu li a:hover{
+   color: crimson;
+   text-decoration: none;
+}
+
+
+.navbar.sticky .menu li a:hover{
+   color: crimson;
+   text-decoration: none;
+}
+
+.navbar.sticky .menu li a{
+   color: #fff;
+}
+
+.navbar .menu li{
+   list-style: none;
+   display: inline-block;
+}
+
+.logo img{
+   height: 50px;
+   margin-left: 200px;
+   width: 160px;
+}
+
+
+
+
+/* Hom Section Stylling*/
+
+.design{
+   padding: 60px 0;
+}
+
+.text{
+   text-align: center;
+
+}
+
+.image img{
+   height: 100%;
+   width: 100%;
+
+}
+.text{
+   padding :8%;
+}
+.text h3{
+   font-size :30px;
+   font-weight: 600;
+   font-family: Nexa Bold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 46px;
+   line-height: 66px;
+   min-width: 500px;
+   color: #E90026;
+   text-shadow: 0px 6px 12px rgba(238, 51, 84, 0.3);
+   }
+
+.text p{
+   min-width: 500px;
+   font-size :25px;
+   font-weight :500;
+   font-family: Nexa Bold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 50px;
+
+   color: #000000;
+}
+
+
+
+
+
+/*about*/
+
+
+.sign{
+   display: flex;
+
+}
+.sign i {
+   padding: 6px 12px;
+   font-size:24px;
+   color: yellow
+}
+
+.sign p{
+   font-family: Nexa Bold;
+   font-style: normal;
+   font-size: 24px;
+   line-height: 24px;
+
+   color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image2 img{
+   width: 75%;
+   height:75%;
+}
+.top_about{
+   padding: 18% 40px;
+}
+.top_about h1{
+   font-family: Nexa Bold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 66px;
+   line-height: 66px;
+   /* identical to box height */
+
+
+color: #FFFFFF;
+
+text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+/*menu btn style */
+
+.icon{
+   color: crimson;
+   font-size: 23px;
+   cursor: pointer;
+   display: none;
+   margin-right: 30px;
+
+  
+}
+.icon:hover{
+   color: crimson;
+}
+
+
+
+
+
+
+
+
+/*mapping section styling*/
+
+.map h1{
+ 
+   text-align: center;
+   font-family: Nexa Bold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 55px;
+   line-height: 55px;
+   /* identical to box height */
+   color: #E90026;
+   text-shadow: 0px 6px 12px rgba(238, 51, 84, 0.3);
+}
+.map h2{
+   line-height: 45px;
+   /* identical to box height */
+   color: #000000;
+   text-align: center;
+   color: #111;
+   font-family: Nexa Bold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 45px;
+   line-height: 45px;
+}
+.map h2 span{
+   color: crimson;
+}
+
+
+.map img{
+   width: 80%;
+   height:90%;
+}
+
+
+
+/*courses section stylling*/
+
+
+
+.text1{
+ 
+   padding: 100px 0;
+}
+.text1 h1{
+   text-align: center;
+  
+   font-family: Nexa Bold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 55px;
+   line-height: 55px;
+   /* identical to box height */
+
+
+   color: #E90026;
+
+   text-shadow: 0px 6px 12px rgba(238, 51, 84, 0.3);
+}
+.text1 h2{
+   text-align: center;
+   font-family: Nexa Bold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 50px;
+
+   color: #000000;
+}
+ 
+
+.mySlides {
+   display: none;
+   transition: all 06s ease;
+}
+
+
+.slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+}
+
+        
+.dot {
+        
+   cursor : pointer ;
+   margin: 0 30px;
+   border-radius: 10px;
+   display: inline-block;
+   font-size: 20px;
+   border: 1px solid #006666;
+   background: #006666;;
+   color: #fff;
+   padding: 10px;
+   transition: background-color 0.6s ease;
+}
+.active{
+   color: #000;;
+   background: white;
+}
+
+.dot:hover{
+   color: #000;
+}
+
+.slide{
+   text-align: center;
+   padding: 20px 0;
+}
+
+
+.fa-facebook {
+  background: #fff;
+  color: crimson;
+  font-size: 60px;
+  padding: 15px;
+  border-radius: 100%;
+  text-decoration: none;
+  margin: 10px;
+
+}
+.fa-youtube {
+  background: #fff;
+  color: crimson;
+  font-size: 60px;
+  padding: 15px;
+  border-radius: 100%;
+  text-decoration: none;
+  margin: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive media */
+
+@media only screen and (max-width:990px) {
+ /* For tablets: */
+
+ .home{
+   height: 150vh;
+ }
+ .image img{
+   height: 90%;
+   width: 90%;
+
+   }
+
+   .about{
+       height: 200vh;
+
+   }
+   .image2 img{
+       width: 55%;
+       height:55%;
+   }
+
+   .top_about{
+       padding: 25% 40px;
+   }
+
+
+   
+  
+
+   .icon{
+       display: block;
+       z-index: 900;
+       position: sticky;
+       left: 0;
+       top: 0;
+   }
+
+  
+
+   .icon i.active:before{
+       content: '\f00d';
+   }
+
+   .navbar .menu{
+       position: fixed;
+       height: 100vh;
+       width: 100%;
+       left: -100%;
+       top: 0;
+       background: gray;
+       padding-top: 80px;
+       text-align: center;
+       transition: all 0.3s ease;
+   }
+
+   .navbar .menu.active{
+       left: 0;
+       color: crimson;
+
+
+   }
+   .navbar .menu li{
+       display: block;
+   }
+   .navbar .menu li a{
+       display: inline-block;
+       margin: 20px 0;
+       font-size: 22px;
+   }
+
+   
+}
+
+@media only screen and (max-width:770px) {
+
+ 
+   .card{
+       width: 70%;
+       height: 70%;
+       text-align: center;
+       margin: 0 70px;
+   }
+
+   .top_about{
+       padding: 50% 40px;
+   }
+
+   .about{
+       height: 250vh;
+
+   }
+   .text{
+      font-size: 20px;
+   }
+   .map h1{
+      line-height: 45px;
+      font-size: 40px;
+  }
+   .map h2{
+      line-height: 45px;
+      font-size: 40px;
+      
+   }
+   .text1 h1{
+      line-height: 45px;
+      font-size: 40px;
+  }
+   .text1 h2{
+      line-height: 45px;
+      font-size: 40px;
+      
+   }
+      
+         .home{
+   height: 100vh;
+ }
+
+
+
+
+}
+
+
+
+@media only screen and (max-width:600px) {
+ 
+   .text1{
+       font-size: 30px;
+
+   }
+
+   .item1 h1{
+       font-size: 25px;
+   }
+   .item1{
+   text-align: center;
+   height: 130vh;
+   }
+
+      text-align: center;
+   }
+   .dot{
+       font-size: 15px;
+       margin: 0 15px;
+   }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
